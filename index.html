@@ -1,21 +1,110 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/png" href="img/icon_website.png">
-    <title>Portfolio - Arthur BEIGNON</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="img/icon_website_rmbg.png">
+  <title>Portfolio - Arthur BEIGNON</title>
 </head>
+
 <body>
-    
+  <header>
+    <div class="container header-content">
+        <img src="img/icon_website.png" alt="Logo Arthur BEIGNON" class="logo">
+        <nav>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+    <div class="container hero-content">
+        <h1>Bonjour, je suis <span>Arthur BEIGNON</span></h1>
+        <p>Alternant technicien d'exploitation informatique & réseau</p>
+        <a href="#about" class="btn-primary">À propos de moi</a>
+    </div>
+    </section>
+
+    <!-- About Section -->
+   <section id="about" class="about">
+    <div class="container">
+        <div class="about-card card">
+            <img src="img/GT61204_orange.jpg"  alt="Arthur Beignon">
+        <div class="card-content about-text">
+            <h2>À propos</h2>
+            <p>Apprenti technicien d’exploitation et étudiant en 2ème année de BUT Informatique</p>
+            <p>Je m’appelle <strong>Arthur Beignon</strong>, j’ai 20 ans et je suis actuellement en deuxième année de BUT Informatique en alternance à Calais. Passionné par le domaine de l’informatique, j’occupe le poste d’apprenti technicien d’exploitation à Dillinger France.</p>
+            <p>Titulaire du permis B et disposant d’un véhicule, je suis mobile et disponible pour échanger sur de nouvelles opportunités ou projets.</p>
+            <p><strong>Qualités personnelles :</strong><br>🧠 Curieux – 🤝 Esprit d’équipe – 🎯 Organisé</p>
+            <p><strong>Centres d’intérêt :</strong><br>🏸 Badminton – 🌍 Voyages – 🎮 Jeux vidéo</p>
+        </div>
+        </div>
+    </div>
+    </section>
 
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Mes Projets</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="img/projet1.jpg" alt="Projet 1">
+          <div class="card-content">
+            <h3>Projet 1</h3>
+            <p>Description rapide du projet.</p>
+            <a href="#" class="btn-secondary">Voir le projet</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/projet2.jpg" alt="Projet 2">
+          <div class="card-content">
+            <h3>Projet 2</h3>
+            <p>Description rapide du projet.</p>
+            <a href="#" class="btn-secondary">Voir le projet</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/projet3.jpg" alt="Projet 3">
+          <div class="card-content">
+            <h3>Projet 3</h3>
+            <p>Description rapide du projet.</p>
+            <a href="#" class="btn-secondary">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  
 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Votre nom">
+        <input type="email" placeholder="Votre email">
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit" class="btn-primary">Envoyer</button>
+      </form>
+      <div class="socials">
+        <a href="mailto:arthurbeignon.pro@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2024 Arthur BEIGNON - Portfolio</p>
+  </footer>
 
-
-    
+  <script src="js/script.js"></script>
 </body>
 </html>
