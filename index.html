@@ -16,6 +16,7 @@
         <ul>
             <li><a href="#about">À propos</a></li>
             <li><a href="#projects">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         </nav>
@@ -32,21 +33,26 @@
     </section>
 
     <!-- About Section -->
-   <section id="about" class="about">
-    <div class="container">
-        <div class="about-card card">
-            <img src="img/GT61204_orange.jpg"  alt="Arthur Beignon">
-        <div class="card-content about-text">
-            <h2>À propos</h2>
-            <p>Apprenti technicien d’exploitation et étudiant en 2ème année de BUT Informatique</p>
-            <p>Je m’appelle <strong>Arthur Beignon</strong>, j’ai 20 ans et je suis actuellement en deuxième année de BUT Informatique en alternance à Calais. Passionné par le domaine de l’informatique, j’occupe le poste d’apprenti technicien d’exploitation à Dillinger France.</p>
-            <p>Titulaire du permis B et disposant d’un véhicule, je suis mobile et disponible pour échanger sur de nouvelles opportunités ou projets.</p>
-            <p><strong>Qualités personnelles :</strong><br>🧠 Curieux – 🤝 Esprit d’équipe – 🎯 Organisé</p>
-            <p><strong>Centres d’intérêt :</strong><br>🏸 Badminton – 🌍 Voyages – 🎮 Jeux vidéo</p>
+   <section id="about" class="about-layout">
+      <img src="img/GT61204_orange.jpg" alt="Photo de profil" class="about-photo">
+
+      <div class="about-card">
+        <div class="about-text">
+          <h2>À propos</h2>
+          <p><strong>Apprenti technicien d’exploitation et étudiant en 3ème année de BUT Informatique</strong></p>
+          <p>Je m’appelle <strong>Arthur Beignon</strong>, j’ai 20 ans et je suis actuellement en troisième année de BUT Informatique en alternance à Calais. Passionné par le domaine de l’informatique, j’occupe le poste d’apprenti technicien d’exploitation à Dillinger France depuis le 1er septembre 2024.</p>
+          <p>Titulaire du permis B et disposant d'un véhicule, je suis mobile et disponible pour échanger sur de nouvelles opportunités ou projets.</p>
+          <p><strong>Qualités personnelles :</strong><br>
+          🧠 Curieux – 🤝 Esprit d’équipe – 🎯 Organisé</p>
+          <p><strong>Centres d’intérêt :</strong><br>
+          🏸 Badminton – 🌍 Voyages – 🎮 Jeux vidéo</p>
         </div>
-        </div>
-    </div>
+
+        <!-- ✅ Bouton ajouté -->
+        <a href="#projects" class="btn-primary">Me découvrir</a>
+      </div>
     </section>
+
 
 
   <!-- Projects Section -->
@@ -91,6 +97,28 @@
     </div>
   </section>
 
+  <!-- Competences Section -->
+    <section id="competences" class="competences">
+      <div class="competences-container">
+        <!-- Image à gauche -->
+        <div class="competences-image">
+          <img src="img/competences_logo.jpg" alt="Compétences illustration">
+        </div>
+        <!-- Carte avec texte -->
+        <div class="competences-card">
+          <h2>Compétences</h2>
+          <ul>
+            <li>💻 Développement WEB : HTML5, CSS3, JavaScript</li>
+            <li>📝 Langages : Python, Java, C, C++, Node.js</li>
+            <li>🗄️ Gestion de bases de données : PostgreSQL</li>
+            <li>🌐 Réseaux : configuration de switchs et routeurs Cisco</li>
+            <li>🛠️ Outils : Git, Docker, Trello, Canva, Figma</li>
+          </ul>
+          <!-- Bouton -->
+          <a href="#competences-detail" class="btn-competences">Voir mes compétences</a>
+        </div>
+      </div>
+    </section>
   
 
   <!-- Contact Section -->
@@ -110,6 +138,10 @@
     </div>
   </section>
 
+  
+
+
+  <!-- Footer -->
   <footer>
     <p>© 2024 Arthur BEIGNON - Portfolio</p>
   </footer>

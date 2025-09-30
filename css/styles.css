@@ -180,50 +180,151 @@ a:focus, button:focus {
 /* =======================
    ABOUT SECTION
 ======================= */
-.about-card {
+
+/* Mise en page plus large */
+.about-layout {
   display: flex;
-  flex-direction: row-reverse; /* ✅ image à droite */
   align-items: flex-start;
   gap: 2rem;
-  max-width: 900px;
+  max-width: 1200px; /* prend plus de largeur */
   margin: 2rem auto;
-  background: var(--white);
+  padding: 0 2rem; /* un peu d'air sur les côtés */
+}
+
+/* Portrait à gauche */
+.about-photo {
+  margin-top: 75px;
+  margin-right: 50px;
+  width: 280px;  /* un peu plus grand */
+  height: auto;
   border-radius: 15px;
-  overflow: hidden;
+  object-fit: cover;
+  flex-shrink: 0;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 
-.about-card img {
-  width: 250px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 10px;
-  flex-shrink: 0;
-}
-
-
-.about-text {
-  flex: 1;
+/* Carte texte qui prend le reste de l'espace */
+.about-card {
+  flex: 1; /* prend tout l’espace dispo */
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+/* Espace entre paragraphes */
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+/* Bouton sous le texte */
+.about-card .btn-primary {
+  align-self: flex-start; /* bouton aligné à gauche */
+  margin-top: 1rem;
+}
+
+/* Animation carte "About" au survol */
+.about-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px); /* petit effet de "soulèvement" */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
 
-/* Mobile : image au-dessus */
+/* Responsive : image au-dessus */
 @media (max-width: 768px) {
-  .about-card {
+  .about-layout {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
-  .about-card img {
-    width: 100%;
+
+  .about-photo {
     max-width: 300px;
+    width: 100%;
+  }
+
+  .about-card {
+    width: 100%;
+    align-items: center;
+  }
+
+  .about-card .btn-primary {
+    align-self: center; /* centré sur mobile */
   }
 }
+
+
+
+/* =======================
+   COMPETENCES SECTION
+======================= */
+.competences-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  max-width: 1100px;
+  padding: 2rem;
+}
+
+/* Image à gauche */
+.competences-image img {
+  margin-right: 50px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  object-fit: cover;
+}
+
+/* Carte */
+.competences-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  flex: 1;
+}
+
+.competences-card h2 {
+  color: #004d56;
+  margin-bottom: 1rem;
+}
+
+.competences-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.competences-card li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Bouton */
+.btn-competences {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #FF6F3C;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn-competences:hover {
+  background: #CDA4DE;
+}
+
 
 /* =======================
    CONTACT SECTION
