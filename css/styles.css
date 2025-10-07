@@ -375,11 +375,58 @@ a:focus, button:focus {
 footer {
   background: var(--primary);
   color: var(--white);
-  text-align: center;
-  padding: 1rem 30px;
-  margin-top: 2rem;
+  padding: 1.5rem 30px;
+  margin-top: 3rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
+.footer-icon img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); /* rend les logos blancs */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1);
+  filter: brightness(0) invert(0.7); /* teinte légère à l’hover */
+}
+
+/* Responsive : centrer tout */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* =======================
