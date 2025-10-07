@@ -18,3 +18,26 @@ document.querySelector('form')?.addEventListener('submit', e => {
   e.target.appendChild(confirmation);
 });
 
+const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  const header = document.querySelector('header');
+
+  // Animation du menu hamburger
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('show');
+  });
+
+  // Gestion du scroll
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+      // vers le bas → cache le header
+      header.classList.add('hidden');
+    } else {
+      // vers le haut → affiche le header
+      header.classList.remove('hidden');
+    }
+    lastScrollY = window.scrollY;
+  });

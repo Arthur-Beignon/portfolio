@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="img/icon_website_rmbg.png">
+  <title>Mentions Légales - Arthur BEIGNON</title>
+</head>
+
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+  <main id="main-content" role="main">
+    <!-- Header (identique au site) -->
+    <header>
+      <div class="container header-content">
+        <nav class="navbar" aria-label="Navigation principale">
+          <div class="hamburger" id="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#about">À propos</a></li>
+            <li><a href="index.html#projects">Projets</a></li>
+            <li><a href="index.html#competences">Compétences</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Mentions Légales</h1>
+        <p>Informations légales, propriété intellectuelle et protection des données</p>
+        <div class="hero-actions">
+          <button onclick="window.print()" class="btn-secondary" aria-label="Imprimer la page">Imprimer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page content -->
+    <section class="content container about-layout" aria-labelledby="ml-title">
+      <h2 id="ml-title" class="sr-only">Mentions légales et informations légales</h2>
+
+      <!-- Quick facts box -->
+      <div class="card info-box" role="region" aria-label="Informations rapides">
+        <table class="info-table" summary="Résumé des informations éditeur et hébergeur">
+          <tbody>
+            <tr>
+              <th scope="row">Éditeur</th>
+              <td>
+                <strong>Arthur BEIGNON</strong><br>
+                Adresse : <span id="editor-address">[Votre adresse complète]</span><br>
+                Email : <a id="editor-email" href="mailto:arthur.beignon@example.com">arthur.beignon@example.com</a>
+                <button class="copy-btn" data-copy-target="editor-email" aria-label="Copier l'email">Copier</button><br>
+                Téléphone : <span id="editor-phone">[Votre numéro]</span>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Responsable de la publication</th>
+              <td>Arthur BEIGNON</td>
+            </tr>
+            <tr>
+              <th scope="row">Hébergeur</th>
+              <td>
+                <strong>[Nom de l’hébergeur]</strong><br>
+                Adresse : [Adresse complète de l’hébergeur]<br>
+                Téléphone : [Numéro hébergeur]
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Site</th>
+              <td><a href="https://www.tonsite.com">www.tonsite.com</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Legal sections using details -->
+      <article class="about-card">
+        <div class="about-text">
+          <details open>
+            <summary><strong>1. Base légale et mentions obligatoires</strong></summary>
+            <p>Conformément à la <strong>loi n°2004-575 du 21 juin 2004</strong> pour la Confiance dans l'Économie Numérique (LCEN), tout site doit permettre d’identifier clairement son éditeur et son hébergeur. L'absence de ces mentions est sanctionnée. Pour un site professionnel, renseignez en outre SIRET/SIREN, forme juridique et capital social le cas échéant.</p>
+            <p>Référence : Loi LCEN (art. 6 et suivants).</p>
+          </details>
+
+          <details>
+            <summary><strong>2. Propriété intellectuelle</strong></summary>
+            <p>Les contenus (textes, images, logos, code source) présents sur ce site sont protégés par le droit d’auteur. L’auteur bénéficie des droits prévus par le Code de la propriété intellectuelle (ex. art. L. 111‑1). Toute reproduction totale ou partielle sans autorisation est interdite.</p>
+            <p>Référence : Code de la propriété intellectuelle (art. L.111‑1 et suivants).</p>
+          </details>
+
+          <details>
+            <summary><strong>3. Données personnelles (RGPD)</strong></summary>
+            <p>Les données collectées via le formulaire de contact sont traitées conformément au <strong>Règlement (UE) 2016/679 (RGPD)</strong> et à la loi Informatique et Libertés. Elles sont utilisées uniquement pour répondre à vos demandes. Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité. Pour exercer ces droits, contactez : <a href="mailto:arthur.beignon@example.com">arthur.beignon@example.com</a>.</p>
+            <p>Si nécessaire, vous pouvez saisir la CNIL.</p>
+            <p>Référence : RGPD (Art. 13, 15, 16, 17).</p>
+          </details>
+
+          <details>
+            <summary><strong>4. Cookies et traceurs</strong></summary>
+            <p>Le site peut utiliser des cookies pour améliorer l’expérience (statistiques, préférences). Lorsqu’un cookie non essentiel est utilisé, l’utilisateur doit être informé et pouvoir refuser. Vous pouvez gérer / supprimer les cookies via les paramètres de votre navigateur.</p>
+          </details>
+
+          <details>
+            <summary><strong>5. Responsabilité</strong></summary>
+            <p>L’éditeur met tout en œuvre pour assurer l’exactitude des informations publiées ; toutefois il ne peut garantir l’absence d’erreurs. L’éditeur décline toute responsabilité pour les dommages directs ou indirects résultant de l’accès ou de l’utilisation du site.</p>
+          </details>
+
+          <details>
+            <summary><strong>6. Signalement de contenu illicite</strong></summary>
+            <p>Conformément à la LCEN, les hébergeurs et éditeurs ont des obligations de retrait et de signalement. Pour tout signalement, contactez l’éditeur ou l’hébergeur selon les coordonnées ci-dessus.</p>
+          </details>
+
+          <details>
+            <summary><strong>7. Durée de conservation des données</strong></summary>
+            <p>Les données issues du formulaire sont conservées aussi longtemps que nécessaire pour répondre à la demande, puis archivées selon les obligations légales et fiscales applicables. Les durées précises peuvent être ajoutées en fonction de la nature des traitements.</p>
+          </details>
+
+          <details>
+            <summary><strong>8. Loi applicable</strong></summary>
+            <p>Le présent site est soumis au droit français. En cas de litige, les tribunaux français seront compétents sauf disposition d’ordre public contraire.</p>
+          </details>
+        </div>
+      </article>
+    </section>
+
+    <!-- Footer (identique au site) -->
+    <footer>
+      <div class="footer-container">
+        <p>© <span id="footer-year"></span> Arthur BEIGNON - Portfolio</p>
+
+        <div class="footer-links">
+          <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+          <a href="https://github.com/Arthur-Beignon" target="_blank" aria-label="GitHub" class="footer-icon">
+            <img src="img/logo/logo_github.png" alt="GitHub">
+          </a>
+          <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank" aria-label="LinkedIn" class="footer-icon">
+            <img src="img/logo/logo_linkedin.png" alt="LinkedIn">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </main>
+</body>
+</html>
