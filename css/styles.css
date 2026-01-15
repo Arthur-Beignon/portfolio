@@ -133,7 +133,6 @@ header.hidden {
   transform: rotate(-45deg) translateY(-8px);
 }
 
-
 /* =======================
    HERO SECTION
 ======================= */
@@ -254,10 +253,9 @@ header.hidden {
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-
 /* Carte texte qui prend le reste de l'espace */
 .about-card {
-  flex: 1; /* prend tout l’espace dispo */
+  flex: 1; /* prend tout l'espace dispo */
   background: var(--white);
   border-radius: 15px;
   padding: 2rem;
@@ -288,7 +286,6 @@ header.hidden {
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
-
 /* Responsive : image au-dessus */
 @media (max-width: 768px) {
   .about-layout {
@@ -311,8 +308,6 @@ header.hidden {
     align-self: center; /* centré sur mobile */
   }
 }
-
-
 
 /* =======================
    COMPETENCES SECTION
@@ -376,7 +371,6 @@ header.hidden {
   background: #CDA4DE;
 }
 
-
 /* =======================
    CONTACT SECTION
 ======================= */
@@ -418,6 +412,217 @@ header.hidden {
 
 .socials a:hover {
   color: var(--primary);
+}
+
+/* =======================
+   MENTIONS LÉGALES
+======================= */
+.mentions-legales {
+  max-width: 900px;
+  margin: 6rem auto 3rem;
+  padding: 0 30px;
+}
+
+.mentions-card {
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.mentions-card h1 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.mentions-card h2 {
+  color: var(--accent);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--highlight);
+  padding-bottom: 0.5rem;
+}
+
+.mentions-card p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.mentions-card strong {
+  color: var(--primary);
+}
+
+.mentions-card ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.mentions-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--primary);
+}
+
+.back-link::before {
+  content: "← ";
+}
+
+/* =======================
+   PAGE PROJETS
+======================= */
+
+.projets-page {
+  max-width: 1200px;
+  margin: 6rem auto 3rem;
+  padding: 0 30px;
+}
+
+.page-title {
+  color: var(--primary);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+/* =======================
+   CARTE PROJET
+======================= */
+
+.projet-card {
+  display: flex;
+  gap: 2rem;
+  background: var(--white);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Image du projet */
+.projet-image {
+  flex-shrink: 0;
+  width: 350px;
+}
+
+.projet-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Contenu du projet */
+.projet-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projet-content h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.projet-content p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.projet-content p strong {
+  color: var(--primary);
+}
+
+/* =======================
+   TECHNOLOGIES
+======================= */
+
+.projet-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.tech-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--light-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  border: 2px solid var(--highlight);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-badge:hover {
+  transform: scale(1.05);
+  border-color: var(--accent);
+}
+
+.tech-badge img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.tech-badge span {
+  font-weight: 500;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+/* =======================
+   BOUTON GITHUB
+======================= */
+
+.btn-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.3s ease;
+  align-self: flex-start;
+}
+
+.btn-github:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.btn-github img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
 }
 
 /* =======================
@@ -465,15 +670,82 @@ footer {
 
 .footer-icon img:hover {
   transform: scale(1.1);
-  filter: brightness(0) invert(0.7); /* teinte légère à l’hover */
+  filter: brightness(0) invert(0.7); /* teinte légère à l'hover */
 }
 
-/* Responsive : centrer tout */
+/* =======================
+   RESPONSIVE
+======================= */
+
+/* Responsive projets */
+@media (max-width: 900px) {
+  .projet-card {
+    flex-direction: column;
+  }
+
+  .projet-image {
+    width: 100%;
+    max-height: 250px;
+  }
+
+  .projet-image img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .competences-container {
+    flex-direction: column;
+  }
+
+  .competences-image img {
+    margin-right: 0;
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
 @media (max-width: 600px) {
+  .projets-page {
+    margin-top: 5rem;
+  }
+
+  .projet-card {
+    padding: 1.5rem;
+  }
+
+  .projet-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .tech-badge {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .tech-badge img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tech-badge span {
+    font-size: 0.85rem;
+  }
+
+  .btn-github {
+    width: 100%;
+    justify-content: center;
+  }
+
   .footer-container {
     flex-direction: column;
     text-align: center;
   }
+  
   .footer-links {
     flex-wrap: wrap;
     justify-content: center;
