@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════
-   PORTFOLIO FR — script.js
+   PORTFOLIO EN — script_en.js
    ══════════════════════════════════════════════════ */
 
 /* ── Hamburger ───────────────────────────────────── */
@@ -29,4 +29,4 @@ window.addEventListener('scroll', () => {
         });
         ticking = true;
     }
-}); 
+});
