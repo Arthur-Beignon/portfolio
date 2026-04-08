@@ -34,38 +34,46 @@ window.addEventListener('scroll', () => {
 /* ══════════════════════════════════════════════════
    PAGE PROJETS — filtres
    ══════════════════════════════════════════════════ */
-(function () {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    if (!filterBtns.length) return; // pas sur la page projets
+document.addEventListener("DOMContentLoaded", () => {
 
-    const cards       = document.querySelectorAll('.projet-page-card');
-    const countEl     = document.querySelector('.projets-results-count');
-    const noResults   = document.querySelector('.no-results');
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const projects = document.querySelectorAll(".project-card");
 
-    function updateCount(visible) {
-        if (!countEl) return;
-        countEl.innerHTML = '<span>' + visible + '</span> projet' + (visible > 1 ? 's' : '') + ' affiché' + (visible > 1 ? 's' : '');
-    }
+  // Sécurité : si rien trouvé, on stop
+  if (!filterBtns.length || !projects.length) return;
 
-    function filter(cat) {
-        let visible = 0;
-        cards.forEach(card => {
-            const match = cat === 'all' || card.dataset.cat === cat;
-            card.classList.toggle('hidden', !match);
-            if (match) visible++;
-        });
-        updateCount(visible);
-        if (noResults) noResults.classList.toggle('visible', visible === 0);
-    }
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            filter(btn.dataset.filter);
-        });
+      // 🔹 Gestion du bouton actif
+      filterBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      // 🔹 Récupère le filtre
+      const filter = btn.dataset.filter;
+
+      // 🔹 Filtrage des projets
+      projects.forEach(project => {
+        const category = project.dataset.category;
+
+        if (filter === "all" || category === filter) {
+          project.style.display = "block";
+
+          // Animation légère
+          project.style.opacity = "0";
+          setTimeout(() => {
+            project.style.opacity = "1";
+          }, 50);
+
+        } else {
+          project.style.opacity = "0";
+          setTimeout(() => {
+            project.style.display = "none";
+          }, 200);
+        }
+      });
+
     });
+  });
 
-    // Init : afficher tout
-    updateCount(cards.length);
-})();
+});
