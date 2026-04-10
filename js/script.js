@@ -4,76 +4,67 @@
 
 /* ── Hamburger ───────────────────────────────────── */
 const hamburger = document.getElementById('hamburger');
-const navLinks  = document.getElementById('nav-links');
+const navLinks = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', () => {
+if (hamburger && navLinks) {
+  hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     navLinks.classList.toggle('open');
-});
-navLinks.querySelectorAll('a').forEach(a => {
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
     });
-});
+  });
+}
 
 /* ── Header scroll ───────────────────────────────── */
 const header = document.getElementById('header');
-let ticking  = false;
+let ticking = false;
 
 window.addEventListener('scroll', () => {
-    if (!ticking) {
-        requestAnimationFrame(() => {
-            header.classList.toggle('visible', window.scrollY > 80);
-            ticking = false;
-        });
-        ticking = true;
-    }
+  if (!ticking) {
+    requestAnimationFrame(() => {
+      if (header) header.classList.toggle('visible', window.scrollY > 80);
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
 
 /* ══════════════════════════════════════════════════
    PAGE PROJETS — filtres
    ══════════════════════════════════════════════════ */
 document.addEventListener("DOMContentLoaded", () => {
-
   const filterBtns = document.querySelectorAll(".filter-btn");
-  const projects = document.querySelectorAll(".project-card");
+  const projects = document.querySelectorAll(".projet-page-card");
 
-  // Sécurité : si rien trouvé, on stop
   if (!filterBtns.length || !projects.length) return;
+
+  const countEl = document.querySelector(".projets-results-count");
+  const noResults = document.querySelector(".no-results");
 
   filterBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-
-      // 🔹 Gestion du bouton actif
       filterBtns.forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
 
-      // 🔹 Récupère le filtre
       const filter = btn.dataset.filter;
+      let visible = 0;
 
-      // 🔹 Filtrage des projets
       projects.forEach(project => {
-        const category = project.dataset.category;
-
-        if (filter === "all" || category === filter) {
-          project.style.display = "block";
-
-          // Animation légère
-          project.style.opacity = "0";
-          setTimeout(() => {
-            project.style.opacity = "1";
-          }, 50);
-
-        } else {
-          project.style.opacity = "0";
-          setTimeout(() => {
-            project.style.display = "none";
-          }, 200);
-        }
+        const match = filter === "all" || project.dataset.category === filter;
+        project.classList.toggle("hidden", !match);
+        if (match) visible++;
       });
 
+      if (countEl) {
+        countEl.innerHTML = filter === "all"
+          ? `<span>${visible}</span> projets au total`
+          : `<span>${visible}</span> projet${visible > 1 ? "s" : ""} en <strong>${btn.textContent.trim()}</strong>`;
+      }
+      if (noResults) noResults.classList.toggle("visible", visible === 0);
     });
   });
-
 });

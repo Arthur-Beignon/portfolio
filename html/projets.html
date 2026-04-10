@@ -1,396 +1,440 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projets — Arthur Beignon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/script.js" defer></script>
 </head>
+
 <body>
 
-<!-- ── Header ── -->
-<header id="header" class="visible">
-    <div class="header-content">
-        <a href="../index.html" class="logo">AB.</a>
-        <a href="../index.html" class="header-back">
-            <svg viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-            Retour au portfolio
-        </a>
-    </div>
-</header>
-
-<!-- ── Hero ── -->
-<div class="projets-page-hero">
-    <div class="projets-page-hero-inner">
-
-        <div class="projets-page-hero-top">
-            <div class="projets-hero-text">
-                <span class="page-label">Portfolio</span>
-                <h1 class="page-title" style="margin-top:12px">Tous mes <span>projets</span></h1>
-                <p class="page-meta" style="margin-top:10px">Une vue complète de mes réalisations personnelles et académiques.</p>
-            </div>
-            <div class="projets-hero-count" aria-hidden="true">12</div>
-        </div>
-
-        <!-- Filtres -->
-        <div class="projets-filters">
-            <button class="filter-btn active" data-filter="all">
-                <span class="filter-dot"></span>Tous
-            </button>
-            <button class="filter-btn" data-filter="dev">
-                <span class="filter-dot"></span>Développement
-            </button>
-            <button class="filter-btn" data-filter="reseau">
-                <span class="filter-dot"></span>Réseaux
-            </button>
-            <button class="filter-btn" data-filter="gestion">
-                <span class="filter-dot"></span>Gestion de projet
-            </button>
-        </div>
-
-        <p class="projets-results-count"></p>
-    </div>
-</div>
-
-<!-- ── Grille projets ── -->
-<section class="projets-page-section">
-    <div class="projets-page-grid">
-
-        <!-- ════ DÉVELOPPEMENT ════ -->
-
-        <!-- 1 · TryHackMe Website -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>THM</span></div>
-                <!-- Remplacer par : <img src="img/projets/tryhackme.png" alt="TryHackMe Website"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Site Web TryHackMe</h3>
-                <p class="projet-page-desc">Site Web de présentation de plusieurs modules sur la plateforme de cybersécurité TryHackMe. Contenu rédigé en français, informations sur les modules et vidéo de réalisation.</p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="">HTML / CSS</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="">JavaScript</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon/tryhack_sae" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- 2 · AstroPhoto -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>AP</span></div>
-                <!-- Remplacer par : <img src="img/projets/astrophoto.png" alt="AstroPhoto"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">AstroPhoto</h3>
-                <p class="projet-page-desc">Application permettant d'explorer et manipuler des images astronomiques. Récupération depuis la base MAST, outils zoom / filtres / combinaison de fichiers FITS multi-spectraux.</p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/pyqt6.png" alt="">PyQt6</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776AB" alt="">Python</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon/AstroPhoto" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- 3 · IHM PowerShell -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>IHM</span></div>
-                <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">IHM - PowerShell</h3>
-                <p class="projet-page-desc">Création d'une interface graphique pour interagir avec l'Active Directory d'une entreprise, pour la création de compte, suppression de compte, désactiver l'utilisateur.
-                Projet seul avec création de documentation et formation au près des équipes pour l'utilisation de l'outil.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_powershell.png" alt="">PowerShell</span>
-                    <span class="stack-badge"><img src="../img/logo/logo_windows.png" alt="">Windows</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-            </div>
-        </div>
-
-        <!-- 4 · IHM PowerShell -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>IHM</span></div>
-                <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">ReactionMarket</h3>
-                <p class="projet-page-desc">Création d'une interface graphique pour faire la gestion d'un supermarché en plaçant les produits, faire un chemin le plus court pour les clients, faire le suivi des stocks. Projet en groupe de 4.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/pyqt6.png" alt="">PyQt6</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776AB" alt="">Python</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon/ReactionMarket" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- 5 · Jeu en c -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>WWII</span></div>
-                <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Jeu textuel en C - WWII</h3>
-                <p class="projet-page-desc">Création d'un jeu textuel en C avec choix sur le thème de la Seconde Guerre mondiale, avec différentes missions et choix pour le joueur. Projet en groupe de 2.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_c.png" alt="">C</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon/JeuEnC_World_War_II" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-        
-        <!-- 6 · Script de sauvegarde -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>Save</span></div>
-                <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Script de sauvegarde - PowerShell</h3>
-                <p class="projet-page-desc">Création d'un script de sauvegarde en PowerShell pour automatiser la sauvegarde des fichiers et dossiers critiques pour une entreprise. Le script est lancé automatiquement chaque jour à une heure définie. Projet seul avec création de documentation.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_powershell.png" alt="">PowerShell</span>
-                    <span class="stack-badge"><img src="../img/logo/logo_windows.png" alt="">Windows</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-            </div>
-        </div>
-
-        <!-- 7 · EnRouteVersLeVietnam -->
-        <div class="projet-page-card" data-category="dev">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>WEB</span></div>
-                <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
-                <span class="projet-page-cat-badge badge-dev">Développement</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Site Web - Vietnam</h3>
-                <p class="projet-page-desc">Création d'un site web de présentation d'un voyage au Vietnam, avec des photos, des descriptions des lieux visités, et des conseils pour les futurs voyageurs. Projet en groupe de 3. Création de la maquette, du design, et du contenu du site.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/E34C2A" alt="">HTML</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon/EnRouteVersLeVietnam" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- ════ RÉSEAUX ════ -->
-
-        <!-- 4 · Serveur GLPI -->
-        <div class="projet-page-card" data-category="reseau">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>GLPI</span></div>
-                <!-- <img src="img/projets/glpi.png" alt="Serveur GLPI"> -->
-                <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Création d'un serveur GLPI</h3>
-                <p class="projet-page-desc">Serveur de gestion de parc informatique installé et configuré sur une VM Linux SUSE. Intégration d'une base de données MariaDB, Nginx et GLPI en container Podman.</p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="img/logo/bash.png" alt="">Bash</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/mariadb/003545" alt="">MariaDB</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/nginx/009639" alt="">Nginx</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/podman/892CA0" alt="">Podman</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-            </div>
-        </div>
-
-        <!-- 5 · JEu socket -->
-        <div class="projet-page-card" data-category="reseau">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>Socket</span></div>
-                <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Jeu morpion - socket</h3>
-                <p class="projet-page-desc">Création d'un jeu de morpion en utilisant les sockets pour la communication entre les clients et le serveur.
-                Projet en équipe de 4 avec la création de diagramme de fonctionnement du code.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge">C</span>
-                    <span class="stack-badge">Linux</span>
-                    <span class="stack-badge">Bizzagi</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon/Socket" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- 6 · Serveur WEB -->
-        <div class="projet-page-card" data-category="reseau">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>Serveur Web</span></div>
-                <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Serveur Web - Virtualisation</h3>
-                <p class="projet-page-desc">Création d'une machine virtuelle pour agir comme serveur Nginx, Php, et MariaDB.
-                    Projet en équipe de 2 avec suivi des commandes et création de documentation technique.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_linux.png" alt="">Linux</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/nginx/009639" alt="">Nginx</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/mariadb/003545" alt="">MariaDB</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/php/474787" alt="">Php</span>
-                </div>
-            </div>
-            <div class="projet-page-footer"></div>
-        </div>
-
-        <!-- 6 · Virtualisation -->
-        <div class="projet-page-card" data-category="reseau">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>Virtualisation</span></div>
-                <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Virtualiser windows XP</h3>
-                <p class="projet-page-desc">Virtualisation d'ordinateur sous Windows XP, qui permet de les mettre sur des systèmes d'exploitation plus récents, et de les faire fonctionner dans un environnement sécurisé. Projet seul avec création de documentation technique.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_windows.png" alt="">Windows</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/virtualbox/183A61" alt="">VirtualBox</span>
-                </div>
-            </div>
-            <div class="projet-page-footer"></div>
-        </div>
-
-        <!-- 6 · Serveur Proxmox -->
-        <div class="projet-page-card" data-category="reseau">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>Proxmox</span></div>
-                <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Serveur Proxmox</h3>
-                <p class="projet-page-desc">Création d'un serveur de virtualisation Proxmox, permettant de gérer et d'orchestrer plusieurs machines virtuelles. Projet en équipe de 3 avec suivi des différents OS utilisés et création de documentation technique.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_proxmox.png" alt="">Proxmox</span>
-                </div>
-            </div>
-            <div class="projet-page-footer"></div>
-        </div>
-
-
-        <!-- ════ GESTION DE PROJET ════ -->
-
-        <div class="projet-page-card" data-category="gestion">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>GitHub</span></div>
-                <span class="projet-page-cat-badge badge-gestion">Outil</span>
-            </div>
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Utilisation de GitHub</h3>
-                <p class="projet-page-desc">
-                J’utilise GitHub pour héberger mes projets, gérer le versioning et collaborer efficacement en équipe grâce aux dépôts, branches et outils intégrés.
-                </p>
-                <div class="projet-page-stack">
-                    <span class="stack-badge"><img src="../img/logo/logo_github.png" alt="">GitHub</span>
-                </div>
-            </div>
-
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-        <div class="projet-page-card" data-category="gestion">
-            <div class="projet-page-img-wrap">
-                <div class="projet-page-img-placeholder"><span>Cahier des charges</span></div>
-                <span class="projet-page-cat-badge badge-gestion">Compétence</span>
-            </div>
-
-            <div class="projet-page-body">
-                <h3 class="projet-page-title">Rédaction de Cahiers des Charges</h3>
-                <p class="projet-page-desc">
-                Participation à la rédaction de cahiers des charges pour structurer les projets, définir les besoins et garantir une cohérence du développement.
-                </p>
-
-                <div class="projet-page-stack">
-                <span class="stack-badge">Gestion de projet</span>
-                <span class="stack-badge">Analyse</span>
-                </div>
-            </div>
-            <div class="projet-page-footer">
-                <a href="https://github.com/Arthur-Beignon" target="_blank" class="btn-github-sm">
-                    <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
-                </a>
-            </div>
-        </div>
-
-        <!-- Message aucun résultat -->
-        <div class="no-results">
-            <p>Aucun projet dans la catégorie <strong id="no-results-cat"></strong> pour l'instant.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- ── Footer ── -->
-<footer>
-    <div class="footer-container">
-        <p>© 2026 Portfolio — Arthur Beignon</p>
-        <div class="footer-links">
-            <a href="index.html" class="footer-link">Retour au portfolio</a>
-            <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
-            <a href="https://github.com/Arthur-Beignon" target="_blank" aria-label="GitHub" class="footer-icon">
-                <img src="../img/logo/logo_github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank" aria-label="LinkedIn" class="footer-icon">
-                <img src="../img/logo/logo_linkedin.png" alt="LinkedIn">
+    <!-- ── Header ── -->
+    <header id="header" class="visible">
+        <div class="header-content">
+            <a href="../index.html" class="logo">AB.</a>
+            <a href="../index.html" class="header-back">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+                Retour au portfolio
             </a>
         </div>
+    </header>
+
+    <!-- ── Hero ── -->
+    <div class="projets-page-hero">
+        <div class="projets-page-hero-inner">
+
+            <div class="projets-page-hero-top">
+                <div class="projets-hero-text">
+                    <span class="page-label">Portfolio</span>
+                    <h1 class="page-title" style="margin-top:12px">Tous mes <span>projets</span></h1>
+                    <p class="page-meta" style="margin-top:10px">Une vue complète de mes réalisations personnelles et
+                        académiques.</p>
+                </div>
+                <div class="projets-hero-count" aria-hidden="true">14</div>
+            </div>
+
+            <!-- Filtres -->
+            <div class="projets-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="filter-dot"></span>Tous
+                </button>
+                <button class="filter-btn" data-filter="dev">
+                    <span class="filter-dot"></span>Développement
+                </button>
+                <button class="filter-btn" data-filter="reseau">
+                    <span class="filter-dot"></span>Réseaux
+                </button>
+                <button class="filter-btn" data-filter="gestion">
+                    <span class="filter-dot"></span>Gestion de projet
+                </button>
+            </div>
+
+            <p class="projets-results-count"></p>
+        </div>
     </div>
-</footer>
+
+    <!-- ── Grille projets ── -->
+    <section class="projets-page-section">
+        <div class="projets-page-grid">
+
+            <!-- ════ DÉVELOPPEMENT ════ -->
+
+            <!-- 1 · TryHackMe Website -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>THM</span></div>
+                    <!-- Remplacer par : <img src="img/projets/tryhackme.png" alt="TryHackMe Website"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Site Web TryHackMe</h3>
+                    <p class="projet-page-desc">Site Web de présentation de plusieurs modules sur la plateforme de
+                        cybersécurité TryHackMe. Contenu rédigé en français, informations sur les modules et vidéo de
+                        réalisation.</p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="">HTML /
+                            CSS</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                                alt="">JavaScript</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon/tryhack_sae" target="_blank" class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2 · AstroPhoto -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>AP</span></div>
+                    <!-- Remplacer par : <img src="img/projets/astrophoto.png" alt="AstroPhoto"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">AstroPhoto</h3>
+                    <p class="projet-page-desc">Application permettant d'explorer et manipuler des images astronomiques.
+                        Récupération depuis la base MAST, outils zoom / filtres / combinaison de fichiers FITS
+                        multi-spectraux.</p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/pyqt6.png" alt="">PyQt6</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776AB"
+                                alt="">Python</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon/AstroPhoto" target="_blank" class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3 · IHM PowerShell -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>IHM</span></div>
+                    <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">IHM - PowerShell</h3>
+                    <p class="projet-page-desc">Création d'une interface graphique pour interagir avec l'Active
+                        Directory d'une entreprise, pour la création de compte, suppression de compte, désactiver
+                        l'utilisateur.
+                        Projet seul avec création de documentation et formation au près des équipes pour l'utilisation
+                        de l'outil.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_powershell.png" alt="">PowerShell</span>
+                        <span class="stack-badge"><img src="../img/logo/logo_windows.png" alt="">Windows</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                </div>
+            </div>
+
+            <!-- 4 · IHM PowerShell -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>IHM</span></div>
+                    <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">ReactionMarket</h3>
+                    <p class="projet-page-desc">Création d'une interface graphique pour faire la gestion d'un
+                        supermarché en plaçant les produits, faire un chemin le plus court pour les clients, faire le
+                        suivi des stocks. Projet en groupe de 4.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/pyqt6.png" alt="">PyQt6</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776AB"
+                                alt="">Python</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon/ReactionMarket" target="_blank" class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5 · Jeu en c -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>WWII</span></div>
+                    <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Jeu textuel en C - WWII</h3>
+                    <p class="projet-page-desc">Création d'un jeu textuel en C avec choix sur le thème de la Seconde
+                        Guerre mondiale, avec différentes missions et choix pour le joueur. Projet en groupe de 2.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_c.png" alt="">C</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon/JeuEnC_World_War_II" target="_blank"
+                        class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6 · Script de sauvegarde -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>Save</span></div>
+                    <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Script de sauvegarde - PowerShell</h3>
+                    <p class="projet-page-desc">Création d'un script de sauvegarde en PowerShell pour automatiser la
+                        sauvegarde des fichiers et dossiers critiques pour une entreprise. Le script est lancé
+                        automatiquement chaque jour à une heure définie. Projet seul avec création de documentation.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_powershell.png" alt="">PowerShell</span>
+                        <span class="stack-badge"><img src="../img/logo/logo_windows.png" alt="">Windows</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                </div>
+            </div>
+
+            <!-- 7 · EnRouteVersLeVietnam -->
+            <div class="projet-page-card" data-category="dev">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>WEB</span></div>
+                    <!-- <img src="img/projets/projet3.png" alt="Nom du projet"> -->
+                    <span class="projet-page-cat-badge badge-dev">Développement</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Site Web - Vietnam</h3>
+                    <p class="projet-page-desc">Création d'un site web de présentation d'un voyage au Vietnam, avec des
+                        photos, des descriptions des lieux visités, et des conseils pour les futurs voyageurs. Projet en
+                        groupe de 3. Création de la maquette, du design, et du contenu du site.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/E34C2A" alt="">HTML</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon/EnRouteVersLeVietnam" target="_blank"
+                        class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- ════ RÉSEAUX ════ -->
+
+            <!-- 4 · Serveur GLPI -->
+            <div class="projet-page-card" data-category="reseau">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>GLPI</span></div>
+                    <!-- <img src="img/projets/glpi.png" alt="Serveur GLPI"> -->
+                    <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Création d'un serveur GLPI</h3>
+                    <p class="projet-page-desc">Serveur de gestion de parc informatique installé et configuré sur une VM
+                        Linux SUSE. Intégration d'une base de données MariaDB, Nginx et GLPI en container Podman.</p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="img/logo/bash.png" alt="">Bash</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/mariadb/003545"
+                                alt="">MariaDB</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/nginx/009639"
+                                alt="">Nginx</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/podman/892CA0"
+                                alt="">Podman</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                </div>
+            </div>
+
+            <!-- 5 · JEu socket -->
+            <div class="projet-page-card" data-category="reseau">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>Socket</span></div>
+                    <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Jeu morpion - socket</h3>
+                    <p class="projet-page-desc">Création d'un jeu de morpion en utilisant les sockets pour la
+                        communication entre les clients et le serveur.
+                        Projet en équipe de 4 avec la création de diagramme de fonctionnement du code.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge">C</span>
+                        <span class="stack-badge">Linux</span>
+                        <span class="stack-badge">Bizzagi</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon/Socket" target="_blank" class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6 · Serveur WEB -->
+            <div class="projet-page-card" data-category="reseau">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>Serveur Web</span></div>
+                    <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Serveur Web - Virtualisation</h3>
+                    <p class="projet-page-desc">Création d'une machine virtuelle pour agir comme serveur Nginx, Php, et
+                        MariaDB.
+                        Projet en équipe de 2 avec suivi des commandes et création de documentation technique.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_linux.png" alt="">Linux</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/nginx/009639"
+                                alt="">Nginx</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/mariadb/003545"
+                                alt="">MariaDB</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/php/474787" alt="">Php</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer"></div>
+            </div>
+
+            <!-- 6 · Virtualisation -->
+            <div class="projet-page-card" data-category="reseau">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>Virtualisation</span></div>
+                    <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Virtualiser windows XP</h3>
+                    <p class="projet-page-desc">Virtualisation d'ordinateur sous Windows XP, qui permet de les mettre
+                        sur des systèmes d'exploitation plus récents, et de les faire fonctionner dans un environnement
+                        sécurisé. Projet seul avec création de documentation technique.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_windows.png" alt="">Windows</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/virtualbox/183A61"
+                                alt="">VirtualBox</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer"></div>
+            </div>
+
+            <!-- 6 · Serveur Proxmox -->
+            <div class="projet-page-card" data-category="reseau">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>Proxmox</span></div>
+                    <span class="projet-page-cat-badge badge-reseau">Réseaux</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Serveur Proxmox</h3>
+                    <p class="projet-page-desc">Création d'un serveur de virtualisation Proxmox, permettant de gérer et
+                        d'orchestrer plusieurs machines virtuelles. Projet en équipe de 3 avec suivi des différents OS
+                        utilisés et création de documentation technique.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_proxmox.png" alt="">Proxmox</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer"></div>
+            </div>
+
+
+            <!-- ════ GESTION DE PROJET ════ -->
+
+            <div class="projet-page-card" data-category="gestion">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>GitHub</span></div>
+                    <span class="projet-page-cat-badge badge-gestion">Outil</span>
+                </div>
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Utilisation de GitHub</h3>
+                    <p class="projet-page-desc">
+                        J’utilise GitHub pour héberger mes projets, gérer le versioning et collaborer efficacement en
+                        équipe grâce aux dépôts, branches et outils intégrés.
+                    </p>
+                    <div class="projet-page-stack">
+                        <span class="stack-badge"><img src="../img/logo/logo_github.png" alt="">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon" target="_blank" class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="projet-page-card" data-category="gestion">
+                <div class="projet-page-img-wrap">
+                    <div class="projet-page-img-placeholder"><span>Cahier des charges</span></div>
+                    <span class="projet-page-cat-badge badge-gestion">Compétence</span>
+                </div>
+
+                <div class="projet-page-body">
+                    <h3 class="projet-page-title">Rédaction de Cahiers des Charges</h3>
+                    <p class="projet-page-desc">
+                        Participation à la rédaction de cahiers des charges pour structurer les projets, définir les
+                        besoins et garantir une cohérence du développement.
+                    </p>
+
+                    <div class="projet-page-stack">
+                        <span class="stack-badge">Gestion de projet</span>
+                        <span class="stack-badge">Analyse</span>
+                    </div>
+                </div>
+                <div class="projet-page-footer">
+                    <a href="https://github.com/Arthur-Beignon" target="_blank" class="btn-github-sm">
+                        <img src="../img/logo/logo_github.png" alt="">Voir sur GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Message aucun résultat -->
+            <div class="no-results">
+                <p>Aucun projet dans la catégorie <strong id="no-results-cat"></strong> pour l'instant.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Footer ── -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2026 Portfolio — Arthur Beignon</p>
+            <div class="footer-links">
+                <a href="../index.html" class="footer-link">Retour au portfolio</a>
+                <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+                <a href="https://github.com/Arthur-Beignon" target="_blank" aria-label="GitHub" class="footer-icon">
+                    <img src="../img/logo/logo_github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank" aria-label="LinkedIn"
+                    class="footer-icon">
+                    <img src="../img/logo/logo_linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

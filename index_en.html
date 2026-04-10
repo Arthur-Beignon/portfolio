@@ -1,531 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Arthur Beignon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script_en.js" defer></script>
 </head>
+
 <body>
 
-<!-- ── Header ──────────────────────────────────── -->
-<header id="header">
-    <div class="header-content">
-        <a href="#" class="logo">AB.</a>
-        <nav class="navbar">
-            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="projets_en.html">Projects</a></li>
-                <li><a href="#competences">Skills</a></li>
-                <li><a href="#experiences">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="lang-switcher">
-                <button class="lang-btn" onclick="window.location.href='index.html'">FR</button>
-                <span class="lang-divider"></span>
-                <button class="lang-btn lang-btn--active">EN</button>
-            </div>
-        </nav>
-    </div>
-</header>
-
-<!-- ── Hero ────────────────────────────────────── -->
-<section id="hero">
-    <div class="hero-inner">
-        <div class="avatar-wrap">
-            <div class="avatar-ring"></div>
-            <div class="avatar">
-                <img src="img/bgn_arthur.jpg" alt="Arthur Beignon profile picture">
-            </div>
-        </div>
-        <div>
-            <h1 class="hero-name">Arthur <span>Beignon</span></h1>
-            <p class="hero-sub">IT Operations Technician</p>
-        </div>
-        <a href="#about" class="scroll-arrow" aria-label="Scroll to About">
-            <div class="arrow-icon">
-                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-            </div>
-            <span>Discover</span>
-        </a>
-    </div>
-</section>
-
-<!-- ── About ───────────────────────────────────── -->
-<section id="about">
-    <div class="about-inner">
-        <div class="about-visual">
-            <img src="img/bgn_arthur.jpg" alt="Arthur Beignon">
-        </div>
-        <div>
-            <p class="about-label">About</p>
-            <h2 class="about-title">👋 Hello.</h2>
-            <p class="about-text">
-                👨‍💻 My name is Arthur Beignon, I'm 20 years old and currently in my third year of a Bachelor of Technology in Computer Science (work-study) in Calais.
-            </p>
-            <p class="about-text">
-                💻 Passionate about IT &amp; networking, I have been working as an apprentice IT operations technician at Dillinger France since September 1st, 2024.
-            </p>
-            <p class="about-text">
-                🚗 Holding a driver's license and owning a vehicle, I am mobile and available to discuss new opportunities or projects.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- ── Skills ──────────────────────────────────── -->
-<section id="competences">
-    <div class="competences-inner">
-        <div class="section-header">
-            <p class="section-label">Skills</p>
-            <h2 class="section-title">My technical <span>stack</span></h2>
-        </div>
-        <div class="skills-categories">
-            <div>
-                <p class="skill-category-title">Scripting &amp; Systems</p>
-                <div class="skills-grid">
-                    <div class="skill-card" style="--pct:65%">
-                        <img class="skill-icon" src="img/logo/bash.png" alt="Bash">
-                        <span class="skill-name">Bash</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">65%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:60%">
-                        <img class="skill-icon" src="img/logo/logo_powershell.png" alt="PowerShell">
-                        <span class="skill-name">PowerShell</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">60%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:60%">
-                        <img class="skill-icon" src="img/logo/logo_linux.png" alt="Linux">
-                        <span class="skill-name">Linux</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">60%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:80%">
-                        <img class="skill-icon" src="img/logo/logo_windows.png" alt="Windows">
-                        <span class="skill-name">Windows</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">80%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:50%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker">
-                        <span class="skill-name">Docker</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">50%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:50%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/git/F05032" alt="Git">
-                        <span class="skill-name">Git</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">50%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
+    <!-- ── Header ──────────────────────────────────── -->
+    <header id="header">
+        <div class="header-content">
+            <a href="#" class="logo">AB.</a>
+            <nav class="navbar">
+                <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                    <span></span><span></span><span></span>
                 </div>
-            </div>
-            <div>
-                <p class="skill-category-title">Development</p>
-                <div class="skills-grid">
-                    <div class="skill-card" style="--pct:82%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
-                        <span class="skill-name">HTML / CSS</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">82%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:68%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JavaScript">
-                        <span class="skill-name">JavaScript</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">68%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:72%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
-                        <span class="skill-name">Python</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">72%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:75%">
-                        <img class="skill-icon" src="img/logo/logo_java.png" alt="Java">
-                        <span class="skill-name">Java</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">65%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:55%">
-                        <div class="skill-icon-fallback">C</div>
-                        <span class="skill-name">C</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">55%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:50%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++">
-                        <span class="skill-name">C++</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">50%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:70%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/postgresql/4169E1" alt="PostgreSQL">
-                        <span class="skill-name">PostgreSQL</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">70%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <p class="skill-category-title">Tools &amp; Methods</p>
-                <div class="skills-grid">
-                    <div class="skill-card" style="--pct:75%">
-                        <img class="skill-icon" src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello">
-                        <span class="skill-name">Trello</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">75%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:70%">
-                        <img class="skill-icon" src="img/logo/logo_canva.png" alt="Canva">
-                        <span class="skill-name">Canva</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">70%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                    <div class="skill-card" style="--pct:50%">
-                        <img class="skill-icon" src="img/logo/logo_github.png" alt="GitHub">
-                        <span class="skill-name">GitHub</span>
-                        <div class="skill-bar-wrap"><div class="skill-percent">78%</div><div class="skill-bar-bg"><div class="skill-bar-fill"></div></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ── Projects ────────────────────────────────── -->
-<section id="projets">
-    <div class="projets-inner">
-        <div class="section-header">
-            <p class="section-label">Projects</p>
-            <h2 class="section-title">What I've <span>built</span></h2>
-        </div>
-        <div class="projets-grid">
-
-            <div class="projet-card">
-                <div class="projet-num">01</div>
-                <h3 class="projet-title">GLPI Server Setup</h3>
-                <p class="projet-desc">
-                    IT asset management server (GLPI) installed and configured on a Linux SUSE virtual machine. Integration of a MariaDB database, Nginx and GLPI in a Podman container.
-                </p>
-                <div class="projet-stack">
-                    <span class="stack-badge"><img src="img/logo/bash.png" alt="">Bash</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/mariadb/003545" alt="">MariaDB</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/nginx/009639" alt="">Nginx</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/podman/892CA0" alt="">Podman</span>
-                </div>
-            </div>
-
-            <div class="projet-card">
-                <div class="projet-num">02</div>
-                <h3 class="projet-title">TryHackMe Website</h3>
-                <p class="projet-desc">
-                    Presentation website for several modules on the TryHackMe cybersecurity platform. Module information and a demonstration video included.
-                </p>
-                <div class="projet-stack">
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="">HTML / CSS</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="">JavaScript</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
-                </div>
-                <a href="https://github.com/Arthur-Beignon/tryhack_sae" target="_blank" class="btn-github">
-                    <img src="img/logo/logo_github.png" alt="GitHub">
-                    <span>View on GitHub</span>
-                </a>
-            </div>
-
-            <div class="projet-card">
-                <div class="projet-num">03</div>
-                <h3 class="projet-title">AstroPhoto</h3>
-                <p class="projet-desc">
-                    Application for exploring and manipulating astronomical images. Retrieves images from the MAST database and offers zoom, filters, and FITS file combination to create multi-spectral compositions.
-                </p>
-                <div class="projet-stack">
-                    <span class="stack-badge"><img src="img/logo/pyqt6.png" alt="">PyQt6</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776AB" alt="">Python</span>
-                    <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
-                </div>
-                <a href="https://github.com/Arthur-Beignon/AstroPhoto" target="_blank" class="btn-github">
-                    <img src="img/logo/logo_github.png" alt="GitHub">
-                    <span>View on GitHub</span>
-                </a>
-            </div>
-
-        </div>
-        <div class="projets-cta">
-            <a href="projets_en.html" class="btn-all-projects">
-                <span>View all my projects</span>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <line x1="5" y1="12" x2="19" y2="12"/>
-                    <polyline points="12 5 19 12 12 19"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- ── Experience ──────────────────────────────── -->
-<section id="experiences">
-    <div class="experiences-inner">
-        <div class="section-header">
-            <p class="section-label">Experience</p>
-            <h2 class="section-title">My professional <span>journey</span></h2>
-        </div>
-        <div class="experiences-grid">
-
-            <div class="exp-card">
-                <div class="exp-img-wrap">
-                    <img src="img/exp/dillinger_france.png" alt="Dillinger France" class="exp-img">
-                    <div class="exp-img-overlay"></div>
-                    <div class="exp-badge">
-                        <span class="exp-badge-dot exp-badge-dot--active"></span>
-                        Ongoing
-                    </div>
-                </div>
-                <div class="exp-body">
-                    <div class="exp-meta">
-                        <span class="exp-date">Sept. 2024 — Present</span>
-                        <span class="exp-type">Work-study</span>
-                    </div>
-                    <h3 class="exp-title">Apprentice IT Operations Technician</h3>
-                    <p class="exp-company">Dillinger France · Dunkerque</p>
-                    <p class="exp-desc">IT asset maintenance, server and network administration, deployment of virtualized solutions. User support and participation in IT infrastructure projects.</p>
-                </div>
-            </div>
-
-            <div class="exp-card">
-                <div class="exp-img-wrap">
-                    <img src="img/exp/dillinger_france.png" alt="Dillinger France" class="exp-img">
-                    <div class="exp-img-overlay"></div>
-                    <div class="exp-badge">
-                        <span class="exp-badge-dot"></span>
-                        Temp job
-                    </div>
-                </div>
-                <div class="exp-body">
-                    <div class="exp-meta">
-                        <span class="exp-date">July 2023</span>
-                        <span class="exp-type">Temp</span>
-                    </div>
-                    <h3 class="exp-title">Loader Operator</h3>
-                    <p class="exp-company">Dillinger France · Dunkerque</p>
-                    <p class="exp-desc">Summer temp job: train loading, handling and logistics of steel sheets. This experience helped me develop discipline, team cohesion and the ability to work in a dynamic industrial environment.</p>
-                </div>
-            </div>
-
-            <div class="exp-card">
-                <div class="exp-img-wrap">
-                    <img src="img/exp/tsg.jpg" alt="Track Solution Group" class="exp-img">
-                    <div class="exp-img-overlay"></div>
-                    <div class="exp-badge">
-                        <span class="exp-badge-dot"></span>
-                        Summer job
-                    </div>
-                </div>
-                <div class="exp-body">
-                    <div class="exp-meta">
-                        <span class="exp-date">August 2022</span>
-                        <span class="exp-type">Summer job</span>
-                    </div>
-                    <h3 class="exp-title">Administrative Assistant</h3>
-                    <p class="exp-company">Track Solution Group · Dunkerque</p>
-                    <p class="exp-desc">Administrative support within a company. Tasks included answering calls, managing invoices and tracking an Excel spreadsheet. This experience helped me develop organizational skills and versatility.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ── Education ───────────────────────────────── -->
-<section id="formation">
-    <div class="experiences-inner">
-        <div class="section-header">
-            <p class="section-label">Education</p>
-            <h2 class="section-title">My academic <span>background</span></h2>
-        </div>
-        <div class="experiences-grid">
-
-            <div class="exp-card">
-                <div class="exp-img-wrap">
-                    <img src="img/exp/iut.jpg" alt="IUT du Littoral" class="exp-img">
-                    <div class="exp-img-overlay"></div>
-                    <div class="exp-badge">
-                        <span class="exp-badge-dot exp-badge-dot--active"></span>
-                        Ongoing
-                    </div>
-                </div>
-                <div class="exp-body">
-                    <div class="exp-meta">
-                        <span class="exp-date">2022 — 2025</span>
-                        <span class="exp-type">BUT</span>
-                    </div>
-                    <h3 class="exp-title">Bachelor of Technology — Networks</h3>
-                    <p class="exp-company">IUT du Littoral Côte d'Opale · Calais</p>
-                    <p class="exp-desc">2nd &amp; 3rd years in work-study. Multidisciplinary training covering software development, system &amp; network administration, databases and project management.</p>
-                </div>
-            </div>
-
-            <div class="exp-card">
-                <div class="exp-img-wrap">
-                    <img src="img/exp/epid.jpg" alt="EPID" class="exp-img">
-                    <div class="exp-img-overlay"></div>
-                    <div class="exp-badge">
-                        <span class="exp-badge-dot"></span>
-                        Obtained
-                    </div>
-                </div>
-                <div class="exp-body">
-                    <div class="exp-meta">
-                        <span class="exp-date">2020 — 2023</span>
-                        <span class="exp-type">High School</span>
-                    </div>
-                    <h3 class="exp-title">Technological Baccalaureate STI2D</h3>
-                    <p class="exp-company">EPID · Dunkerque</p>
-                    <p class="exp-desc">Technological baccalaureate with SIN and 2I2D specialties. Obtained with honours (Bien).</p>
-                </div>
-            </div>
-
-            <div class="exp-card">
-                <div class="exp-img-wrap">
-                    <img src="img/exp/st-winoc.jpeg" alt="Collège Saint-Winoc" class="exp-img">
-                    <div class="exp-img-overlay"></div>
-                    <div class="exp-badge">
-                        <span class="exp-badge-dot"></span>
-                        Obtained
-                    </div>
-                </div>
-                <div class="exp-body">
-                    <div class="exp-meta">
-                        <span class="exp-date">2016 — 2020</span>
-                        <span class="exp-type">DNB</span>
-                    </div>
-                    <h3 class="exp-title">French National Diploma (DNB)</h3>
-                    <p class="exp-company">Collège Saint-Winoc · Bergues</p>
-                    <p class="exp-desc">French National Diploma obtained with highest honours (Très Bien). First steps into the world of computer science and natural sciences.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ── Contact ─────────────────────────────────── -->
-<section id="contact">
-    <div class="contact-inner">
-        <div class="section-header">
-            <p class="section-label">Contact</p>
-            <h2 class="section-title">Get in <span>touch</span></h2>
-        </div>
-        <div class="contact-layout">
-
-            <div class="contact-info">
-                <h3 class="contact-info-title">My information</h3>
-                <p class="contact-info-sub">Feel free to reach out for any opportunity, collaboration or simple conversation.</p>
-                <ul class="contact-details">
-                    <li class="contact-detail-item">
-                        <div class="contact-detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <span class="contact-detail-label">Email</span>
-                            <a href="mailto:arthurbeignon.pro@gmail.com" class="contact-detail-value">arthurbeignon.pro@gmail.com</a>
-                        </div>
-                    </li>
-                    <li class="contact-detail-item">
-                        <div class="contact-detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                <circle cx="12" cy="10" r="3"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <span class="contact-detail-label">Location</span>
-                            <span class="contact-detail-value">Calais / Dunkerque, France</span>
-                        </div>
-                    </li>
-                    <li class="contact-detail-item">
-                        <div class="contact-detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <span class="contact-detail-label">Phone</span>
-                            <a href="tel:+33768099299" class="contact-detail-value">+33 7 68 09 92 99</a>
-                        </div>
-                    </li>
-                    <li class="contact-detail-item">
-                        <div class="contact-detail-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <span class="contact-detail-label">Availability</span>
-                            <span class="contact-detail-value">Open to opportunities</span>
-                        </div>
-                    </li>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#competences">Skills</a></li>
+                    <li><a href="html/projets_en.html">Projects</a></li>
+                    <li><a href="#experiences">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="contact-socials">
-                    <a href="https://github.com/Arthur-Beignon" target="_blank" class="contact-social-btn">
-                        <img src="img/logo/logo_github.png" alt="GitHub">GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank" class="contact-social-btn contact-social-btn--linkedin">
-                        <img src="img/logo/logo_linkedin.png" alt="LinkedIn">LinkedIn
-                    </a>
+                <div class="lang-switcher">
+                    <button class="lang-btn" onclick="window.location.href='index.html'">FR</button>
+                    <span class="lang-divider"></span>
+                    <button class="lang-btn lang-btn--active">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ── Hero ────────────────────────────────────── -->
+    <section id="hero">
+        <div class="hero-inner">
+            <div class="avatar-wrap">
+                <div class="avatar-ring"></div>
+                <div class="avatar">
+                    <img src="img/bgn_arthur.jpg" alt="Arthur Beignon profile picture">
                 </div>
             </div>
-
-            <div class="contact-form-wrap">
-                <form class="contact-form" id="contact-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label for="cf-nom">Last name</label>
-                            <input type="text" id="cf-nom" name="nom" placeholder="Your last name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-prenom">First name</label>
-                            <input type="text" id="cf-prenom" name="prenom" placeholder="Your first name" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="cf-email">Email</label>
-                        <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cf-sujet">Subject</label>
-                        <input type="text" id="cf-sujet" name="sujet" placeholder="Subject of your message">
-                    </div>
-                    <div class="form-group">
-                        <label for="cf-message">Message</label>
-                        <textarea id="cf-message" name="message" rows="5" placeholder="Your message..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-send">
-                        <span>Send message</span>
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="22" y1="2" x2="11" y2="13"/>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
-                        </svg>
-                    </button>
-                </form>
+            <div>
+                <h1 class="hero-name">Arthur <span>Beignon</span></h1>
+                <p class="hero-sub">IT Operations Technician</p>
             </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ── Footer ──────────────────────────────────── -->
-<footer>
-    <div class="footer-container">
-        <p>© 2026 Portfolio — Arthur Beignon</p>
-        <div class="footer-links">
-            <a href="html/legal-notice.html" class="footer-link">Legal notice</a>
-            <a href="https://github.com/Arthur-Beignon" target="_blank" aria-label="GitHub" class="footer-icon">
-                <img src="img/logo/logo_github.png" alt="GitHub">
-            </a>
-            <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank" aria-label="LinkedIn" class="footer-icon">
-                <img src="img/logo/logo_linkedin.png" alt="LinkedIn">
+            <a href="#about" class="scroll-arrow" aria-label="Scroll to About">
+                <div class="arrow-icon">
+                    <svg viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </div>
+                <span>Discover</span>
             </a>
         </div>
-    </div>
-</footer>
+    </section>
+
+    <!-- ── About ───────────────────────────────────── -->
+    <section id="about">
+        <div class="about-inner">
+            <div class="about-visual">
+                <img src="img/bgn_arthur.jpg" alt="Arthur Beignon">
+            </div>
+            <div>
+                <p class="about-label">About</p>
+                <h2 class="about-title">👋 Hello.</h2>
+                <p class="about-text">
+                    👨‍💻 My name is Arthur Beignon, I'm 20 years old and currently in my third year of a Bachelor of
+                    Technology in Computer Science (work-study) in Calais.
+                </p>
+                <p class="about-text">
+                    💻 Passionate about IT &amp; networking, I have been working as an apprentice IT operations
+                    technician at Dillinger France since September 1st, 2024.
+                </p>
+                <p class="about-text">
+                    🚗 Holding a driver's license and owning a vehicle, I am mobile and available to discuss new
+                    opportunities or projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Skills ──────────────────────────────────── -->
+    <section id="competences">
+        <div class="competences-inner">
+            <div class="section-header">
+                <p class="section-label">Skills</p>
+                <h2 class="section-title">My technical <span>stack</span></h2>
+            </div>
+            <div class="skills-categories">
+                <div>
+                    <p class="skill-category-title">Scripting &amp; Systems</p>
+                    <div class="skills-grid">
+                        <div class="skill-card" style="--pct:65%">
+                            <img class="skill-icon" src="img/logo/bash.png" alt="Bash">
+                            <span class="skill-name">Bash</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">65%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:60%">
+                            <img class="skill-icon" src="img/logo/logo_powershell.png" alt="PowerShell">
+                            <span class="skill-name">PowerShell</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">60%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:60%">
+                            <img class="skill-icon" src="img/logo/logo_linux.png" alt="Linux">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">60%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:80%">
+                            <img class="skill-icon" src="img/logo/logo_windows.png" alt="Windows">
+                            <span class="skill-name">Windows</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">80%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:50%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">50%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:50%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/git/F05032" alt="Git">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">50%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="skill-category-title">Development</p>
+                    <div class="skills-grid">
+                        <div class="skill-card" style="--pct:82%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML5">
+                            <span class="skill-name">HTML / CSS</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">82%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:68%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                                alt="JavaScript">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">68%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:72%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/python/3776AB" alt="Python">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">72%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:75%">
+                            <img class="skill-icon" src="img/logo/logo_java.png" alt="Java">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">65%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:55%">
+                            <div class="skill-icon-fallback">C</div>
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">55%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:50%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/cplusplus/00599C" alt="C++">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">50%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:70%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/postgresql/4169E1"
+                                alt="PostgreSQL">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">70%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="skill-category-title">Tools &amp; Methods</p>
+                    <div class="skills-grid">
+                        <div class="skill-card" style="--pct:75%">
+                            <img class="skill-icon" src="https://cdn.simpleicons.org/trello/0052CC" alt="Trello">
+                            <span class="skill-name">Trello</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">75%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:70%">
+                            <img class="skill-icon" src="img/logo/logo_canva.png" alt="Canva">
+                            <span class="skill-name">Canva</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">70%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" style="--pct:50%">
+                            <img class="skill-icon" src="img/logo/logo_github.png" alt="GitHub">
+                            <span class="skill-name">GitHub</span>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-percent">78%</div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Projects ────────────────────────────────── -->
+    <section id="projets">
+        <div class="projets-inner">
+            <div class="section-header">
+                <p class="section-label">Projects</p>
+                <h2 class="section-title">What I've <span>built</span></h2>
+            </div>
+            <div class="projets-grid">
+
+                <div class="projet-card">
+                    <div class="projet-num">01</div>
+                    <h3 class="projet-title">GLPI Server Setup</h3>
+                    <p class="projet-desc">
+                        IT asset management server (GLPI) installed and configured on a Linux SUSE virtual machine.
+                        Integration of a MariaDB database, Nginx and GLPI in a Podman container.
+                    </p>
+                    <div class="projet-stack">
+                        <span class="stack-badge"><img src="img/logo/bash.png" alt="">Bash</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/mariadb/003545"
+                                alt="">MariaDB</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/nginx/009639"
+                                alt="">Nginx</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/podman/892CA0"
+                                alt="">Podman</span>
+                    </div>
+                </div>
+
+                <div class="projet-card">
+                    <div class="projet-num">02</div>
+                    <h3 class="projet-title">TryHackMe Website</h3>
+                    <p class="projet-desc">
+                        Presentation website for several modules on the TryHackMe cybersecurity platform. Module
+                        information and a demonstration video included.
+                    </p>
+                    <div class="projet-stack">
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="">HTML /
+                            CSS</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/javascript/F7DF1E"
+                                alt="">JavaScript</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
+                    </div>
+                    <a href="https://github.com/Arthur-Beignon/tryhack_sae" target="_blank" class="btn-github">
+                        <img src="img/logo/logo_github.png" alt="GitHub">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+
+                <div class="projet-card">
+                    <div class="projet-num">03</div>
+                    <h3 class="projet-title">AstroPhoto</h3>
+                    <p class="projet-desc">
+                        Application for exploring and manipulating astronomical images. Retrieves images from the MAST
+                        database and offers zoom, filters, and FITS file combination to create multi-spectral
+                        compositions.
+                    </p>
+                    <div class="projet-stack">
+                        <span class="stack-badge"><img src="img/logo/pyqt6.png" alt="">PyQt6</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/python/3776AB"
+                                alt="">Python</span>
+                        <span class="stack-badge"><img src="https://cdn.simpleicons.org/git/F05032" alt="">Git</span>
+                    </div>
+                    <a href="https://github.com/Arthur-Beignon/AstroPhoto" target="_blank" class="btn-github">
+                        <img src="img/logo/logo_github.png" alt="GitHub">
+                        <span>View on GitHub</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="projets-cta">
+                <a href="html/projets_en.html" class="btn-all-projects">
+                    <span>View all my projects</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Experience ──────────────────────────────── -->
+    <section id="experiences">
+        <div class="experiences-inner">
+            <div class="section-header">
+                <p class="section-label">Experience</p>
+                <h2 class="section-title">My professional <span>journey</span></h2>
+            </div>
+            <div class="experiences-grid">
+
+                <div class="exp-card">
+                    <div class="exp-img-wrap">
+                        <img src="img/exp/dillinger_france.png" alt="Dillinger France" class="exp-img">
+                        <div class="exp-img-overlay"></div>
+                        <div class="exp-badge">
+                            <span class="exp-badge-dot exp-badge-dot--active"></span>
+                            Ongoing
+                        </div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-meta">
+                            <span class="exp-date">Sept. 2024 — Present</span>
+                            <span class="exp-type">Work-study</span>
+                        </div>
+                        <h3 class="exp-title">Apprentice IT Operations Technician</h3>
+                        <p class="exp-company">Dillinger France · Dunkerque</p>
+                        <p class="exp-desc">IT asset maintenance, server and network administration, deployment of
+                            virtualized solutions. User support and participation in IT infrastructure projects.</p>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-img-wrap">
+                        <img src="img/exp/dillinger_france.png" alt="Dillinger France" class="exp-img">
+                        <div class="exp-img-overlay"></div>
+                        <div class="exp-badge">
+                            <span class="exp-badge-dot"></span>
+                            Temp job
+                        </div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-meta">
+                            <span class="exp-date">July 2023</span>
+                            <span class="exp-type">Temp</span>
+                        </div>
+                        <h3 class="exp-title">Loader Operator</h3>
+                        <p class="exp-company">Dillinger France · Dunkerque</p>
+                        <p class="exp-desc">Summer temp job: train loading, handling and logistics of steel sheets. This
+                            experience helped me develop discipline, team cohesion and the ability to work in a dynamic
+                            industrial environment.</p>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-img-wrap">
+                        <img src="img/exp/tsg.jpg" alt="Track Solution Group" class="exp-img">
+                        <div class="exp-img-overlay"></div>
+                        <div class="exp-badge">
+                            <span class="exp-badge-dot"></span>
+                            Summer job
+                        </div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-meta">
+                            <span class="exp-date">August 2022</span>
+                            <span class="exp-type">Summer job</span>
+                        </div>
+                        <h3 class="exp-title">Administrative Assistant</h3>
+                        <p class="exp-company">Track Solution Group · Dunkerque</p>
+                        <p class="exp-desc">Administrative support within a company. Tasks included answering calls,
+                            managing invoices and tracking an Excel spreadsheet. This experience helped me develop
+                            organizational skills and versatility.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Education ───────────────────────────────── -->
+    <section id="formation">
+        <div class="experiences-inner">
+            <div class="section-header">
+                <p class="section-label">Education</p>
+                <h2 class="section-title">My academic <span>background</span></h2>
+            </div>
+            <div class="experiences-grid">
+
+                <div class="exp-card">
+                    <div class="exp-img-wrap">
+                        <img src="img/exp/iut.jpg" alt="IUT du Littoral" class="exp-img">
+                        <div class="exp-img-overlay"></div>
+                        <div class="exp-badge">
+                            <span class="exp-badge-dot exp-badge-dot--active"></span>
+                            Ongoing
+                        </div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-meta">
+                            <span class="exp-date">2022 — 2025</span>
+                            <span class="exp-type">BUT</span>
+                        </div>
+                        <h3 class="exp-title">Bachelor of Technology — Networks</h3>
+                        <p class="exp-company">IUT du Littoral Côte d'Opale · Calais</p>
+                        <p class="exp-desc">2nd &amp; 3rd years in work-study. Multidisciplinary training covering
+                            software development, system &amp; network administration, databases and project management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-img-wrap">
+                        <img src="img/exp/epid.jpg" alt="EPID" class="exp-img">
+                        <div class="exp-img-overlay"></div>
+                        <div class="exp-badge">
+                            <span class="exp-badge-dot"></span>
+                            Obtained
+                        </div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-meta">
+                            <span class="exp-date">2020 — 2023</span>
+                            <span class="exp-type">High School</span>
+                        </div>
+                        <h3 class="exp-title">Technological Baccalaureate STI2D</h3>
+                        <p class="exp-company">EPID · Dunkerque</p>
+                        <p class="exp-desc">Technological baccalaureate with SIN and 2I2D specialties. Obtained with
+                            honours (Bien).</p>
+                    </div>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-img-wrap">
+                        <img src="img/exp/st-winoc.jpeg" alt="Collège Saint-Winoc" class="exp-img">
+                        <div class="exp-img-overlay"></div>
+                        <div class="exp-badge">
+                            <span class="exp-badge-dot"></span>
+                            Obtained
+                        </div>
+                    </div>
+                    <div class="exp-body">
+                        <div class="exp-meta">
+                            <span class="exp-date">2016 — 2020</span>
+                            <span class="exp-type">DNB</span>
+                        </div>
+                        <h3 class="exp-title">French National Diploma (DNB)</h3>
+                        <p class="exp-company">Collège Saint-Winoc · Bergues</p>
+                        <p class="exp-desc">French National Diploma obtained with highest honours (Très Bien). First
+                            steps into the world of computer science and natural sciences.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Contact ─────────────────────────────────── -->
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="section-header">
+                <p class="section-label">Contact</p>
+                <h2 class="section-title">Get in <span>touch</span></h2>
+            </div>
+            <div class="contact-layout">
+
+                <div class="contact-info">
+                    <h3 class="contact-info-title">My information</h3>
+                    <p class="contact-info-sub">Feel free to reach out for any opportunity, collaboration or simple
+                        conversation.</p>
+                    <ul class="contact-details">
+                        <li class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Email</span>
+                                <a href="mailto:arthurbeignon.pro@gmail.com"
+                                    class="contact-detail-value">arthurbeignon.pro@gmail.com</a>
+                            </div>
+                        </li>
+                        <li class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Location</span>
+                                <span class="contact-detail-value">Calais / Dunkerque, France</span>
+                            </div>
+                        </li>
+                        <li class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.29 6.29l1.42-1.42a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Phone</span>
+                                <a href="tel:+33768099299" class="contact-detail-value">+33 7 68 09 92 99</a>
+                            </div>
+                        </li>
+                        <li class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-detail-label">Availability</span>
+                                <span class="contact-detail-value">Open to opportunities</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="contact-socials">
+                        <a href="https://github.com/Arthur-Beignon" target="_blank" class="contact-social-btn">
+                            <img src="img/logo/logo_github.png" alt="GitHub">GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank"
+                            class="contact-social-btn contact-social-btn--linkedin">
+                            <img src="img/logo/logo_linkedin.png" alt="LinkedIn">LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="cf-nom">Last name</label>
+                                <input type="text" id="cf-nom" name="nom" placeholder="Your last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cf-prenom">First name</label>
+                                <input type="text" id="cf-prenom" name="prenom" placeholder="Your first name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-email">Email</label>
+                            <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-sujet">Subject</label>
+                            <input type="text" id="cf-sujet" name="sujet" placeholder="Subject of your message">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message">Message</label>
+                            <textarea id="cf-message" name="message" rows="5" placeholder="Your message..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">
+                            <span>Send message</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ── Footer ──────────────────────────────────── -->
+    <footer>
+        <div class="footer-container">
+            <p>© 2026 Portfolio — Arthur Beignon</p>
+            <div class="footer-links">
+                <a href="html/legal-notice.html" class="footer-link">Legal notice</a>
+                <a href="https://github.com/Arthur-Beignon" target="_blank" aria-label="GitHub" class="footer-icon">
+                    <img src="img/logo/logo_github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/arthur-beignon-b08b14341/" target="_blank" aria-label="LinkedIn"
+                    class="footer-icon">
+                    <img src="img/logo/logo_linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>
